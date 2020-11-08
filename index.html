@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Parallax</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">Moon Light</h2>
+    </section>
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+    <section>
+        <p style="color: whitesmoke;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            saepe tempora soluta vel. Libero aliquid
+            fugiat accusantium rem reiciendis voluptatum, illo adipisci expedita. Saepe mollitia doloribus molestiae
+            atque corrupti vero quo error sequi necessitatibus dolores facere quas sed pariatur ullam in nulla nisi
+            cumque nobis labore quae dignissimos, magnam fugiat exercitationem amet. Sint magnam tenetur minima
+            doloremque harum beatae deleniti distinctio aperiam ab reprehenderit, praesentium provident perspiciatis,
+            blanditiis ullam maxime quaerat ducimus nam possimus? Fuga fugit dolores non deserunt soluta earum! Iure
+            animi quis deserunt harum possimus repellat aspernatur quia iusto quasi velit in voluptatibus ab, voluptas
+            pariatur fugiat placeat molestiae enim maxime sint obcaecati. Amet, hic architecto quasi reiciendis delectus
+            quod cum aspernatur ullam excepturi ipsum! Temporibus, est perspiciatis. Rem facilis quibusdam quidem, illo
+            exercitationem minus ad ratione, quaerat, temporibus iure provident animi necessitatibus numquam quam
+            perferendis deleniti maxime adipisci! Dolores dolor iusto obcaecati accusantium natus ullam nam. Possimus
+            saepe, velit omnis ullam tenetur nisi, accusamus cupiditate tempora, ea fugiat eos eum facere accusantium
+            adipisci! Dolore voluptatum recusandae omnis sequi! Neque ipsum tempore perferendis architecto quis
+            necessitatibus. Recusandae provident labore accusamus repudiandae ut porro impedit explicabo reiciendis.
+            Optio nobis accusamus quas eligendi facilis, voluptatibus dignissimos perferendis repellendus provident
+            exercitationem blanditiis voluptas sint assumenda dolore distinctio pariatur incidunt ipsam quo! Dolores
+            reprehenderit quisquam optio maiores, numquam nisi accusantium molestiae fugiat tempora tenetur eius alias
+            hic quia velit aut consectetur dolor officia eaque labore, pariatur, asperiores voluptatem dolorum
+            distinctio! Sed necessitatibus, repellendus libero enim minima atque neque! Voluptatibus omnis accusantium
+            reprehenderit quasi sequi, iste at cupiditate ipsam repellendus rem, voluptates quas officiis mollitia
+            incidunt temporibus. Cum officiis odit assumenda consequuntur velit perspiciatis ex fuga quis enim
+            recusandae quidem, maxime est, nemo molestias facilis praesentium illum accusantium ipsum quos? Doloremque
+            nam voluptate voluptatum odit? Earum voluptatibus animi nam. Perspiciatis voluptatem fugit dolorum totam
+            voluptate veritatis culpa officiis est facilis, adipisci unde quidem, tempore dignissimos tenetur placeat
+            inventore, vel assumenda. Tenetur quaerat cum corporis, repudiandae soluta minima velit! Necessitatibus
+            mollitia repellat perspiciatis autem earum dolores, maiores accusamus quos, nemo ex natus excepturi
+            voluptates voluptate eum molestiae architecto debitis dolorum iure tempore dolor! Magnam ullam vero,
+            eveniet, saepe aliquam ad distinctio unde fugit perferendis accusamus laboriosam autem quisquam, consequatur
+            dolorum optio libero adipisci quidem sit animi quae. Cumque doloribus vel sint esse nulla fugiat iste velit
+            sunt iure quos sit, dolores consequatur odio voluptate placeat non soluta ipsa aliquam reprehenderit.
+            Accusantium quas aspernatur aliquid aliquam nihil sit praesentium molestias veritatis dolorem. Reprehenderit
+            tempore nemo itaque iure dolorem inventore odit culpa voluptatem fugiat corporis pariatur reiciendis
+            assumenda possimus animi nostrum ipsam ducimus, quas voluptates. Odit facilis voluptatem iure veniam aut
+            dolore iusto et, aliquam explicabo ullam officiis rem cumque, recusandae itaque est obcaecati adipisci, quia
+            facere vero. Blanditiis illo rerum id quia aspernatur quisquam, voluptas ullam dolor optio inventore
+            adipisci nam deleniti omnis cum iste quo quas dolores ea quam sequi consequuntur nemo assumenda! Architecto,
+            quae maiores fugiat nostrum nam tempora, provident iusto qui perferendis nihil officia odit vero
+            perspiciatis facilis id. Corrupti, autem maiores?</p>
+    </section>
+</body>
+
+</html>
